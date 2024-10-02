@@ -22,6 +22,6 @@ public class EpisodesTest {
         masterListTest.addEligibleSeasonNumber(1);
         masterListTest.addEligibleSeasonNumber(2);
 
-        Assertions.assertTrue(masterListTest.getEligibleSeasonNumbers().contains(3));
+        Assertions.assertTrue(masterListTest.getEligibleSeasonNumbers().contains(2));
     }
 }
