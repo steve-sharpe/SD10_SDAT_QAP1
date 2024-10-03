@@ -8,7 +8,7 @@ public class Main {
         Episodes episode = new Episodes();
 
         // Set episode date
-        episode.setEpisodeDate(2023, Calendar.OCTOBER, 10);
+        episode.setEpisodeDate(24, 10, 31);
 
         // Set other properties
         episode.setGuestName("John Doe");
