@@ -63,7 +63,7 @@ public class EpisodesTest {
         newEpisode.setSeasonNumber(3);
 
         // Check if the season number is correctly set
-        Assertions.assertEquals(4, newEpisode.getSeasonNumber());
+        Assertions.assertEquals(3, newEpisode.getSeasonNumber());
     }
 
     @Test
