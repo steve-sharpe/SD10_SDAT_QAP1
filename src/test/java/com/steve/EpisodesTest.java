@@ -97,4 +97,33 @@ public class EpisodesTest {
         Assertions.assertEquals(expectedDate.get(Calendar.MONTH), newEpisode.getEpisodeMonth());
         Assertions.assertEquals(expectedDate.get(Calendar.DAY_OF_MONTH), newEpisode.getEpisodeDay());
     }
+
+    // New Tests
+
+    @Test
+    public void testGuestNameNotNull() {
+        Episodes newEpisode = new Episodes();
+        newEpisode.setGuestName("Jane Doe");
+
+        // Check if the guest name is not null
+        Assertions.assertNotNull(newEpisode.getGuestName());
+    }
+
+    @Test
+    public void testSeasonNumberPositive() {
+        Episodes newEpisode = new Episodes();
+        newEpisode.setSeasonNumber(4);
+
+        // Check if the season number is positive
+        Assertions.assertTrue(newEpisode.getSeasonNumber() > 0);
+    }
+
+    @Test
+    public void testEpisodeNumberInRange() {
+        Episodes newEpisode = new Episodes();
+        newEpisode.setEpisodeNumber(10);
+
+        // Check if the episode number is within a specific range
+        Assertions.assertTrue(newEpisode.getEpisodeNumber() >= 1 && newEpisode.getEpisodeNumber() <= 20);
+    }
 }
